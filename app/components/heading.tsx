@@ -1,11 +1,10 @@
 interface Props {
-  name: string;
-  lastname: string;
-}
+  text: string;
+  }
 export default function Heading(props: Props) {
   return (
     <div>
-      <h1>{`Name: ${props.name} LastName: ${props.lastname}`}</h1>
+      <h1 className="text-xl mb-4 underline">{`${props.text}`}</h1>
     </div>
   );
 }
